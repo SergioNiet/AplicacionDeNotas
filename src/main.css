@@ -1,0 +1,41 @@
+body{
+     background-color: slategray;
+     margin: 0px;
+}
+
+#app{
+     display: grid;
+     grid-template-columns: repeat(auto-fill, 200px);
+     padding: 24px;
+     gap: 24px;
+}
+
+.note{
+     height: 200px; /* misma altura que la altura dada en la altura dada en el grid. */ 
+     box-sizing: border-box; /* El padding no va a sobrepasar el ancho y largo de la nota */
+     padding: 16px;
+     border:  none;
+     border-radius: 15px;
+     box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+     resize: none;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 15px;
+}
+
+.add-note{
+     height: 200px;
+     border: none;
+     outline: none;
+     background-color: rgba(0, 0, 0, 0.1);
+     border-radius: 15px;
+     font-size: 120px;
+     color: rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+     transition: background 0.2s;
+
+}
+.add-note:hover{
+     background-color: rgba(0, 0, 0, 0.2);
+}
+
+
